@@ -1,4 +1,4 @@
-const CACHE_NAME = "minha-jornada-com-deus-v5";
+const CACHE_NAME = "minha-jornada-com-deus-v6";
 const CORE_ASSETS = ["/", "/manifest.json", "/images/logo-app.png"];
 
 self.addEventListener("install", (event) => {

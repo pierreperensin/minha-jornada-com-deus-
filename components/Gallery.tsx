@@ -3,27 +3,31 @@
 import { useEffect, useId, useState } from "react";
 import SectionHeader from "@/components/SectionHeader";
 
-const captions = [
-  "Estudo da Palavra",
-  "Comunhão no PV",
-  "Conferência Missionária",
-  "Momentos de adoração",
-  "Treinamento ministerial",
-  "Vida em comunidade",
-  "Preparação para servir",
-  "Experiências que moldam o chamado",
-];
-
-const photos = Array.from({ length: 22 }, (_, index) => {
-  const number = String(index + 1).padStart(2, "0");
-  const caption = captions[index % captions.length];
-
-  return {
-    src: `/images/pv-${number}.jpg`,
-    caption,
-    alt: `${caption} no Seminário Bíblico Palavra da Vida - foto ${index + 1}`,
-  };
-});
+const photos = [
+  { src: "/images/pv-vida-01.jpg", caption: "Estudo da Palavra em sala" },
+  { src: "/images/pv-vida-02.jpg", caption: "Discipulado e ensino" },
+  { src: "/images/pv-vida-03.jpg", caption: "Atentos à mensagem" },
+  { src: "/images/pv-vida-04.jpg", caption: "Momento de oração" },
+  { src: "/images/pv-vida-05.jpg", caption: "Louvor e adoração" },
+  { src: "/images/pv-vida-06.jpg", caption: "Reunidos em adoração" },
+  { src: "/images/pv-vida-07.jpg", caption: "Adoração de mãos levantadas" },
+  { src: "/images/pv-vida-08.jpg", caption: "Participação e testemunho" },
+  { src: "/images/pv-vida-09.jpg", caption: "Comunhão entre os alunos" },
+  { src: "/images/pv-vida-10.jpg", caption: "Vida em comunidade" },
+  { src: "/images/pv-vida-11.jpg", caption: "Conferência Missionária" },
+  { src: "/images/pv-vida-12.jpg", caption: "Plenária da conferência" },
+  { src: "/images/pv-vida-13.jpg", caption: "Pregação da Palavra" },
+  { src: "/images/pv-vida-14.jpg", caption: "Coração aberto ao chamado" },
+  { src: "/images/pv-vida-15.jpg", caption: "De pé em adoração" },
+  { src: "/images/pv-vida-16.jpg", caption: "Louvor com alegria" },
+  { src: "/images/pv-vida-17.jpg", caption: "Noite de celebração" },
+  { src: "/images/pv-vida-18.jpg", caption: "Adoração em família" },
+  { src: "/images/pv-vida-19.jpg", caption: "Conferência Missionária - foto oficial" },
+  { src: "/images/pv-vida-20.jpg", caption: "Encerramento em plenária" },
+].map((photo) => ({
+  ...photo,
+  alt: `${photo.caption} no Seminário Bíblico Palavra da Vida`,
+}));
 
 export default function Gallery() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
