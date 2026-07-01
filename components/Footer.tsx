@@ -6,7 +6,18 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl">
         <div className="grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
           <div>
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-[var(--gold)]">Minha Jornada com Deus</p>
+            <div className="mb-4 flex items-center gap-3">
+              <img
+                alt="Logo Palavra da Vida (PV)"
+                className="h-12 w-12 rounded-full bg-white object-cover p-1"
+                decoding="async"
+                height="96"
+                loading="lazy"
+                src="/images/logo-pv.jpg"
+                width="96"
+              />
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-[var(--gold)]">Minha Jornada com Deus</p>
+            </div>
             <p className="mt-3 max-w-2xl text-white/75">
               Uma jornada de fé, estudo, missão e propósito. Obrigada por caminhar comigo em oração,
               encorajamento e parceria.

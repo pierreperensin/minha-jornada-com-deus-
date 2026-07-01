@@ -70,8 +70,19 @@ export default function DonationCard() {
       className="reveal rounded-[2rem] border border-[rgba(23,59,47,0.12)] bg-white p-6 shadow-[0_28px_80px_rgba(23,33,28,0.14)]"
       id="oferta"
     >
-      <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[rgba(201,162,74,0.14)] text-[var(--gold)]">
-        <Icon name="donation" />
+      <div className="mb-5 flex items-center gap-3">
+        <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[rgba(201,162,74,0.14)] text-[var(--gold)]">
+          <Icon name="donation" />
+        </span>
+        <img
+          alt="Logo Palavra da Vida (PV)"
+          className="h-12 w-12 rounded-full border border-[rgba(23,59,47,0.12)] object-cover shadow-sm"
+          decoding="async"
+          height="96"
+          loading="lazy"
+          src="/images/logo-pv.jpg"
+          width="96"
+        />
       </div>
       <p className="text-sm font-bold uppercase tracking-[0.18em] text-[var(--gold)]">Oferta e parceria</p>
       <h2 className="mt-3 text-3xl font-black leading-tight text-[var(--green)]">

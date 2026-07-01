@@ -6,11 +6,15 @@ import SectionHeader from "@/components/SectionHeader";
 const photos = [
   { src: "/images/pv-vida-01.jpg", caption: "Estudo da Palavra em sala" },
   { src: "/images/pv-vida-02.jpg", caption: "Discipulado e ensino" },
+  { src: "/images/pv-vida-21.jpg", caption: "Aula de teologia em sala" },
   { src: "/images/pv-vida-03.jpg", caption: "Atentos à mensagem" },
+  { src: "/images/pv-vida-22.jpg", caption: "Ouvindo a pregação" },
+  { src: "/images/pv-vida-23.jpg", caption: "Atenção à Palavra" },
   { src: "/images/pv-vida-04.jpg", caption: "Momento de oração" },
   { src: "/images/pv-vida-05.jpg", caption: "Louvor e adoração" },
   { src: "/images/pv-vida-06.jpg", caption: "Reunidos em adoração" },
   { src: "/images/pv-vida-07.jpg", caption: "Adoração de mãos levantadas" },
+  { src: "/images/pv-vida-24.jpg", caption: "De pé em adoração" },
   { src: "/images/pv-vida-08.jpg", caption: "Participação e testemunho" },
   { src: "/images/pv-vida-09.jpg", caption: "Comunhão entre os alunos" },
   { src: "/images/pv-vida-10.jpg", caption: "Vida em comunidade" },
@@ -24,6 +28,7 @@ const photos = [
   { src: "/images/pv-vida-18.jpg", caption: "Adoração em família" },
   { src: "/images/pv-vida-19.jpg", caption: "Conferência Missionária - foto oficial" },
   { src: "/images/pv-vida-20.jpg", caption: "Encerramento em plenária" },
+  { src: "/images/pv-vida-25.jpg", caption: "Comunhão e amizade entre os alunos" },
 ].map((photo) => ({
   ...photo,
   alt: `${photo.caption} no Seminário Bíblico Palavra da Vida`,
