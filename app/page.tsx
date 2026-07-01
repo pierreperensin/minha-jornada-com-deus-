@@ -84,7 +84,7 @@ export default function Home() {
             </div>
 
             <ImageCard
-              src="/images/mariana-oficial.png"
+              src="/images/mariana-oficial.jpg"
               alt="Mariana Perensin"
               caption="Mariana Perensin, estudante de Teologia no SBPV."
               priority

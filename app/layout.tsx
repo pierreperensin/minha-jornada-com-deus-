@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     description,
     images: [
       {
-        url: "/images/mariana-oficial.png",
+        url: "/images/mariana-oficial.jpg",
         width: 1200,
         height: 630,
         alt: "Mariana Perensin - Minha Jornada com Deus",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Minha Jornada com Deus | Mariana Perensin",
     description,
-    images: ["/images/mariana-oficial.png"],
+    images: ["/images/mariana-oficial.jpg"],
   },
 };
 
