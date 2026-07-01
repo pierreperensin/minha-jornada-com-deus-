@@ -8,7 +8,6 @@ const photos = [
   { src: "/images/pv-vida-02.jpg", caption: "Discipulado e ensino" },
   { src: "/images/pv-vida-21.jpg", caption: "Aula de teologia em sala" },
   { src: "/images/pv-vida-03.jpg", caption: "Atentos à mensagem" },
-  { src: "/images/pv-vida-22.jpg", caption: "Ouvindo a pregação" },
   { src: "/images/pv-vida-23.jpg", caption: "Atenção à Palavra" },
   { src: "/images/pv-vida-04.jpg", caption: "Momento de oração" },
   { src: "/images/pv-vida-05.jpg", caption: "Louvor e adoração" },
