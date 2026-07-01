@@ -123,6 +123,7 @@ export default function Home() {
                 icon="study"
                 title="Por que o Seminário Bíblico Palavra da Vida?"
                 description="O SBPV é um ambiente de formação bíblica, discipulado, serviço e desenvolvimento ministerial, com uma visão clara de preparo para a obra de Cristo."
+                logo
               />
               <div className="mt-8 grid gap-4 sm:grid-cols-3">
                 {journeyCards.map((card) => (

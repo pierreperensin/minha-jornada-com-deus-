@@ -99,6 +99,7 @@ export default function Gallery() {
           title="No PV estudamos, somos treinados e desafiados a servir a Cristo"
           description="A rotina no Seminário Bíblico Palavra da Vida une estudo bíblico, discipulado, serviço, comunhão, desafios missionários e preparo ministerial."
           align="center"
+          logo
         />
 
         <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
