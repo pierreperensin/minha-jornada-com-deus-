@@ -199,8 +199,8 @@ export default function Home() {
               </p>
             </div>
             <ImageCard
-              src="/images/retiro-vocacionados.jpg"
-              alt="Retiro de vocacionados"
+              src="/images/encontro-jesus.jpg"
+              alt="Meu encontro com Jesus"
               caption="Espaços de comunhão e direção vocacional fortalecem a caminhada."
             />
           </div>
