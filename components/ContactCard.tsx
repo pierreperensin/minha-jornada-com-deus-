@@ -9,13 +9,13 @@ export default function ContactCard() {
       <div className="rounded-[1.5rem] bg-[var(--green)] p-6 text-white">
         <div className="mb-6 flex items-center gap-3">
           <img
-            alt="Logo SBPV"
-            className="h-16 w-auto rounded-xl bg-white p-2"
+            alt="Mariana Perensin"
+            className="h-16 w-16 rounded-full bg-white object-cover p-1"
             decoding="async"
             height="160"
             loading="lazy"
-            src="/images/logo-sbpv.png"
-            width="240"
+            src="/images/mariana-thumb.jpg"
+            width="160"
           />
           <img
             alt="Logo Palavra da Vida (PV)"
