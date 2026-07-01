@@ -1,4 +1,4 @@
-const CACHE_NAME = "minha-jornada-com-deus-v1";
+const CACHE_NAME = "minha-jornada-com-deus-v2";
 const CORE_ASSETS = ["/", "/manifest.json", "/images/logo-app.png"];
 
 self.addEventListener("install", (event) => {
@@ -16,13 +16,41 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
-  if (event.request.method !== "GET") {
+  const request = event.request;
+
+  if (request.method !== "GET") {
     return;
   }
 
+  // Network-first for page navigations so updated content always wins when online,
+  // falling back to the cached page only when offline.
+  if (request.mode === "navigate") {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          const copy = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
+          return response;
+        })
+        .catch(() => caches.match(request).then((cached) => cached || caches.match("/"))),
+    );
+    return;
+  }
+
+  // Stale-while-revalidate for other assets (images, etc.): serve fast from cache
+  // but refresh the cached copy in the background so changed files propagate.
   event.respondWith(
-    caches.match(event.request).then((cached) => {
-      return cached || fetch(event.request);
+    caches.match(request).then((cached) => {
+      const network = fetch(request)
+        .then((response) => {
+          if (response && response.status === 200) {
+            const copy = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
+          }
+          return response;
+        })
+        .catch(() => cached);
+      return cached || network;
     }),
   );
 });
