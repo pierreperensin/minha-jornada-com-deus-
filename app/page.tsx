@@ -95,8 +95,8 @@ export default function Home() {
         <section className="section-pad section-white" id="comeco">
           <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
             <ImageCard
-              src="/images/batismo-mariana.png"
-              alt="Batismo de Mariana"
+              src="/images/comeco-jornada.jpg"
+              alt="Mariana com amigas no início da jornada"
               caption="Memórias de fé que ajudam a contar o começo desta jornada."
             />
             <div>
