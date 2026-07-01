@@ -20,7 +20,7 @@ export default function NavBar() {
             </a>
           ))}
         </nav>
-        <a className="rounded-full bg-[var(--green)] px-4 py-2 text-sm font-bold text-white shadow-[0_12px_28px_rgba(23,59,47,0.18)]" href="#oferta">
+        <a className="rounded-full bg-[var(--green)] px-4 py-2 text-sm font-bold text-[#ffffff] shadow-[0_12px_28px_rgba(23,59,47,0.18)]" href="#oferta">
           Contribuir
         </a>
       </div>
