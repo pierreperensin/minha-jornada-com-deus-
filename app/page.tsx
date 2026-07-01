@@ -131,8 +131,8 @@ export default function Home() {
               </div>
             </div>
             <ImageCard
-              src="/images/sbpv-aereo.png"
-              alt="Vista aérea do Seminário Bíblico Palavra da Vida"
+              src="/images/sbpv-seminario-v2.jpg"
+              alt="Seminário Bíblico Palavra da Vida"
               caption="Seminário Bíblico Palavra da Vida — SBPV."
             />
           </div>
