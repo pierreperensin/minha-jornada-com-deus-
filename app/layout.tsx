@@ -1,7 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  process.env.URL ||
+  "https://minhajornadacomdeus.netlify.app";
 const description =
   "Acompanhe a jornada de Mariana Perensin, estudante de Teologia no Seminário Bíblico Palavra da Vida, e participe em oração, contribuição e divulgação.";
 
